@@ -2,6 +2,8 @@
 
 set -e
 
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 if [ -n "$NPM_AUTH_TOKEN" ]; then
   # Respect NPM_CONFIG_USERCONFIG if it is provided, default to $HOME/.npmrc
   NPM_CONFIG_USERCONFIG="${NPM_CONFIG_USERCONFIG:-"$HOME/.npmrc"}"
